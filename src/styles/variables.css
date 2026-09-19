@@ -1,0 +1,41 @@
+:root {
+  /* --- paleta --- */
+  --bg: #0a0a0f;
+  --bg-panel: #1a1a1f;
+  --bg-panel-alt: #2a2a30;
+  --blue-deep: #0f1f3d;
+  --blue-mid: #16213e;
+
+  --text-primary: #f5f5f5;   /* uso pontual: botões, títulos-chave */
+  --text-body: #c4c4cd;      /* corpo de texto sobre fundo escuro */
+  --text-muted: #83838f;     /* legendas, texto secundário */
+
+  --accent: #4d72b8;         /* tom claro da família azul, pra interação */
+  --accent-soft: rgba(77, 114, 184, 0.16);
+  --accent-strong: #6f8fce;
+
+  --border: rgba(245, 245, 245, 0.09);
+  --border-strong: rgba(245, 245, 245, 0.18);
+
+  --danger: #c96a6a;
+
+  /* --- tipografia --- */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* --- espaçamento --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 8rem;
+
+  /* --- layout --- */
+  --content-width: 1180px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

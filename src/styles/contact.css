@@ -1,0 +1,29 @@
+.contact {
+  background: var(--blue-deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: var(--space-2xl) 1.5rem;
+  text-align: left;
+}
+
+.contact-inner h2 {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  margin-bottom: var(--space-sm);
+}
+
+.contact-inner p {
+  color: var(--text-body);
+  margin-bottom: var(--space-lg);
+  max-width: 52ch;
+}
+
+.contact-actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}

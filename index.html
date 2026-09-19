@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicolas Lobo — Programador</title>
+  <meta name="description" content="Sites, planilhas e jogos sob medida, feitos por Nicolas Lobo. Orçamento rápido, direto no WhatsApp." />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">Nicolas<span>Lobo</span></a>
+
+      <nav class="main-nav" id="main-nav">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a
+          class="btn btn-whatsapp-inline"
+          href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+          target="_blank"
+          rel="noopener"
+        >
+          Falar no WhatsApp
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero-text">
+        <p class="hero-kicker">disponível para novos projetos</p>
+        <h1>Eu transformo um pedido solto em algo que funciona de verdade.</h1>
+        <p class="hero-lead">
+          Sou o Nicolas — programo sites, planilhas e jogos sozinho, do primeiro
+          esboço até a entrega. Sem equipe de vendas, sem enrolação: você me
+          conta o que precisa, eu construo com atenção aos detalhes e devolvo
+          rápido.
+        </p>
+        <div class="hero-actions">
+          <a href="#servicos" class="btn btn-primary">Ver serviços e preços</a>
+          <a href="#portfolio" class="btn btn-ghost">Ver o que já fiz</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <!-- preenchido via JS (efeito de digitação) -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVIÇOS ===================== -->
+    <section class="services reveal" id="servicos">
+      <div class="section-heading">
+        <h2>O que eu faço</h2>
+        <p>Três frentes, um preço combinado no seu caso — os valores abaixo são a faixa que costumo praticar.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Card: Sites -->
+        <article class="service-card service-card--sites">
+          <img class="service-icon" src="./src/assets/icons/icon-sites.svg" alt="" width="40" height="40" />
+          <h3>Sites</h3>
+          <p class="service-desc">Página única ou com várias seções, rápida e do jeito que você imaginou — como este site aqui, por exemplo.</p>
+          <p class="service-price"><span class="price-label">faixa</span><span class="price-value">R$500 – R$1.000</span></p>
+          <button class="service-toggle" aria-expanded="false" aria-controls="details-sites">
+            O que preciso saber
+          </button>
+          <div class="service-details" id="details-sites" hidden>
+            <p>Pra fechar um valor certo, preciso saber:</p>
+            <ul>
+              <li>Nome da pessoa ou empresa e um pouco sobre o que ela faz</li>
+              <li>Referências visuais — sites que você gosta, cores, estilo</li>
+              <li>Quantas páginas ou seções o site vai ter</li>
+              <li>Se vai precisar de login de usuário</li>
+              <li>Se vai ter pagamento online ou algum outro sistema integrado</li>
+            </ul>
+          </div>
+          <a
+            class="service-whatsapp"
+            data-service="Sites"
+            href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+            target="_blank"
+            rel="noopener"
+          >
+            Pedir orçamento
+          </a>
+        </article>
+
+        <!-- Card: Planilhas -->
+        <article class="service-card service-card--planilhas">
+          <img class="service-icon" src="./src/assets/icons/icon-planilhas.svg" alt="" width="40" height="40" />
+          <h3>Planilhas</h3>
+          <p class="service-desc">Controle financeiro, estoque, cálculo automático — o que hoje você resolve no papel ou de cabeça.</p>
+          <p class="service-price"><span class="price-label">faixa</span><span class="price-value">R$80 – R$160</span></p>
+          <button class="service-toggle" aria-expanded="false" aria-controls="details-planilhas">
+            O que preciso saber
+          </button>
+          <div class="service-details" id="details-planilhas" hidden>
+            <p>Pra fechar um valor certo, preciso saber:</p>
+            <ul>
+              <li>Qual é o objetivo da planilha — o que ela precisa calcular ou organizar</li>
+              <li>Quais sistemas ou ferramentas ela precisa conversar (Excel, Google Sheets etc.)</li>
+              <li>Se você já tem um modelo em mente ou quer sugestão de visual</li>
+            </ul>
+          </div>
+          <a
+            class="service-whatsapp"
+            data-service="Planilhas"
+            href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+            target="_blank"
+            rel="noopener"
+          >
+            Pedir orçamento
+          </a>
+        </article>
+
+        <!-- Card: Jogos -->
+        <article class="service-card service-card--jogos">
+          <img class="service-icon" src="./src/assets/icons/icon-jogos.svg" alt="" width="40" height="40" />
+          <h3>Jogos</h3>
+          <p class="service-desc">Protótipos e projetos completos em Roblox ou Unity — do sistema de combate ao menu inicial.</p>
+          <p class="service-price"><span class="price-label">faixa</span><span class="price-value">R$200 – R$2.000</span></p>
+          <button class="service-toggle" aria-expanded="false" aria-controls="details-jogos">
+            O que preciso saber
+          </button>
+          <div class="service-details" id="details-jogos" hidden>
+            <p>Pra fechar um valor certo, preciso saber:</p>
+            <ul>
+              <li>Qual é o objetivo do jogo e pra quem ele é</li>
+              <li>A história e as mecânicas principais, mesmo que ainda estejam soltas</li>
+              <li>Plataforma: Roblox ou Unity</li>
+              <li>Se a arte vai ser feita por você ou fica por minha conta</li>
+            </ul>
+          </div>
+          <a
+            class="service-whatsapp"
+            data-service="Jogos"
+            href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+            target="_blank"
+            rel="noopener"
+          >
+            Pedir orçamento
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== PORTFÓLIO ===================== -->
+    <section class="portfolio reveal" id="portfolio">
+      <div class="section-heading">
+        <h2>O que já saiu do papel</h2>
+        <p>Dois exemplos de projetos em andamento, direto da minha tela.</p>
+      </div>
+
+      <div class="portfolio-list">
+
+        <div class="portfolio-item">
+          <div class="portfolio-media">
+            <img src="./src/assets/planilha-exemplo.jpg" alt="Planilha de controle financeiro mostrando entradas, custos e lucro mês a mês" loading="lazy" width="857" height="751" />
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">planilha</span>
+            <h3>Controle financeiro de fardamentos</h3>
+            <p>Planilha que organiza entradas, custos e outras saídas por mês, com o lucro calculado automaticamente e um resumo anual pra acompanhar o negócio de longe.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item portfolio-item--reverse">
+          <div class="portfolio-media">
+            <img src="./src/assets/jogo-exemplo.jpg" alt="Editor da Unity mostrando um RPG 2D em pixel art, com personagem, inimigos e cenário em desenvolvimento" loading="lazy" width="1431" height="815" />
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">jogo · unity</span>
+            <h3>RPG 2D em pixel art</h3>
+            <p>Projeto em desenvolvimento: sistema de movimento, vida, inimigos com IA básica e cenário construído tile por tile.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item portfolio-item--site">
+          <div class="portfolio-site-mock" aria-hidden="true">
+            <div class="mock-bar">
+              <span></span><span></span><span></span>
+              <div class="mock-url">nicolaslobo.dev</div>
+            </div>
+            <div class="mock-body">
+              <div class="mock-line" style="width: 62%"></div>
+              <div class="mock-line" style="width: 84%"></div>
+              <div class="mock-line" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="portfolio-tag">site</span>
+            <h3>Este site aqui</h3>
+            <p>Não tenho um print pra te mostrar porque você já está dentro do exemplo: este é um site que eu mesmo planejei, desenhei e codifiquei do zero.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== AVALIAÇÕES ===================== -->
+    <section class="feedback reveal" id="avaliacoes">
+      <div class="section-heading">
+        <h2>Já trabalhou comigo?</h2>
+        <p>Deixar uma avaliação é opcional, mas ajuda muita gente a decidir. Leva menos de um minuto.</p>
+      </div>
+
+      <div class="feedback-layout">
+
+        <form class="feedback-form" id="feedback-form" novalidate>
+
+          <fieldset class="rating-field">
+            <legend>Sua nota <span class="required">*</span></legend>
+            <div class="star-rating" id="star-rating" role="radiogroup" aria-required="true">
+              <button type="button" class="star" data-value="1" role="radio" aria-checked="false" aria-label="1 estrela">★</button>
+              <button type="button" class="star" data-value="2" role="radio" aria-checked="false" aria-label="2 estrelas">★</button>
+              <button type="button" class="star" data-value="3" role="radio" aria-checked="false" aria-label="3 estrelas">★</button>
+              <button type="button" class="star" data-value="4" role="radio" aria-checked="false" aria-label="4 estrelas">★</button>
+              <button type="button" class="star" data-value="5" role="radio" aria-checked="false" aria-label="5 estrelas">★</button>
+            </div>
+            <p class="field-error" id="rating-error" hidden>Escolha uma nota antes de enviar.</p>
+          </fieldset>
+
+          <div class="field">
+            <label for="feedback-name">Seu nome <span class="optional">(opcional)</span></label>
+            <input type="text" id="feedback-name" name="name" maxlength="60" autocomplete="name" />
+          </div>
+
+          <div class="field">
+            <label for="feedback-text">Conte como foi <span class="optional">(opcional)</span></label>
+            <textarea id="feedback-text" name="text" maxlength="1000" rows="4"></textarea>
+            <p class="char-counter"><span id="char-count">0</span>/1000</p>
+          </div>
+
+          <div class="field">
+            <label for="feedback-photo">Foto do serviço <span class="optional">(opcional)</span></label>
+            <input type="file" id="feedback-photo" name="photo" accept="image/*" />
+            <div class="photo-preview" id="photo-preview" hidden>
+              <img id="photo-preview-img" alt="Prévia da imagem selecionada" />
+              <button type="button" class="photo-remove" id="photo-remove" aria-label="Remover imagem">×</button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary feedback-submit">Enviar avaliação</button>
+          <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="feedback-list-wrap">
+          <h3>Avaliações desta sessão</h3>
+          <ul class="feedback-list" id="feedback-list">
+            <li class="feedback-empty" id="feedback-empty">Ainda não há avaliações por aqui — seja a primeira pessoa a deixar uma.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="contact" id="contato">
+      <div class="contact-inner reveal">
+        <h2>Bora conversar sobre o seu projeto?</h2>
+        <p>Me chama no WhatsApp e me conta em poucas palavras o que você precisa — eu respondo com as próximas perguntas e, se fizer sentido, já mando uma ideia de prazo e valor.</p>
+        <div class="contact-actions">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+            target="_blank"
+            rel="noopener"
+          >
+            Chamar no WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="https://instagram.com/nicolas_lobo0" target="_blank" rel="noopener">
+            @nicolas_lobo0 no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#inicio" class="logo logo--footer">Nicolas<span>Lobo</span></a>
+      <div class="footer-socials">
+        <a href="https://instagram.com/nicolas_lobo0" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5582999612513" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="footer-copy">© <span id="current-year"></span> Nicolas Lobo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTÃO FLUTUANTE WHATSAPP ===================== -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/5582999612513?text=Ol%C3%A1!%20Vi%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os."
+    target="_blank"
+    rel="noopener"
+    aria-label="Chamar no WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true">
+      <path fill="currentColor" d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.38.68 4.6 1.86 6.48L4 29l7.68-1.82a11.96 11.96 0 0 0 4.34.82h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3Zm0 21.86h-.01c-1.55 0-3.06-.4-4.4-1.16l-.32-.18-3.36.8.72-3.34-.2-.34a9.85 9.85 0 0 1-1.5-5.26c0-5.46 4.44-9.9 9.92-9.9 2.64 0 5.13 1.04 6.99 2.9a9.83 9.83 0 0 1 2.9 6.99c0 5.46-4.44 9.9-9.9 9.9Zm5.4-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.76.97-.93 1.16-.17.2-.34.22-.63.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.13.3-.34.44-.5.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.66-1.6-.9-2.18-.24-.58-.48-.5-.66-.5-.17-.01-.37-.01-.56-.01-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.1 3.2 5.1 4.5.71.3 1.27.49 1.7.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.56-.35Z"/>
+    </svg>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
